@@ -51,3 +51,4 @@ src
 tests
 package-lock.json
 tsconfig.json
+jest.config.js

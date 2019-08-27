@@ -6,7 +6,7 @@
 * React >=16.2
 
 ### API
-*  `interpolate(key: string, params: Array<any>)`  - Interpolate values with specified parameters
+*  `interpolate(key: string, params: Array<any>): string | Array<any>`  - Interpolate values with specified parameters
 
 ## How to use
 

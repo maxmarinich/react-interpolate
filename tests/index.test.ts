@@ -18,4 +18,12 @@ describe("interpolate", function() {
   it("should return expected result if params case 2", function() {
     expect(interpolate("{0}{1}{0}", [1, null])).toStrictEqual([1, null, 1]);
   });
+
+  it("should return expected type of result if no params", function() {
+    expect(typeof interpolate("{0}{1}{0}", [])).toBe("string");
+  });
+
+  it("should return expected type of result if params", function() {
+    expect(Array.isArray(interpolate("{0}{1}{0}", [1, null]))).toBe(true);
+  });
 });
