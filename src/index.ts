@@ -3,7 +3,7 @@ import * as Utils from "./utils";
 const PARAMS_TEST_PATTERN = /{(.*?)}/g;
 const PARAMS_MATCH_PATTERN = /{*[^{}]+}*/g;
 
-export default (key: string = "", params: Array<any> = []) => {
+export default (key: string, params: Array<any> = []) => {
   if (key && params && params.length && PARAMS_TEST_PATTERN.test(key)) {
     const values = key.match(PARAMS_MATCH_PATTERN) || [];
 
