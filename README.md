@@ -20,7 +20,7 @@ npm i react react-interpolate-plugin
 
     const key = 'Some {0} for {1} {2}.';
     const element = <span>smart</span>;
-    const Component = () => <span onClick={console.log}>interpolation</span>;
+    const Component = () => <span>interpolation</span>;
     
     const Example = () => {
       return interpolate(key, ['text', element, <Component key="component" />])
