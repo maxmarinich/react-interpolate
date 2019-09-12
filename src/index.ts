@@ -1,6 +1,6 @@
 import * as Utils from "./utils";
 
-const PARAMS_TEST_PATTERN = /{(.*?)}/g;
+const PARAMS_TEST_PATTERN = /{(.*?)}/;
 const PARAMS_MATCH_PATTERN = /{*[^{}]+}*/g;
 
 export default (key: string, params: Array<any> = []) => {

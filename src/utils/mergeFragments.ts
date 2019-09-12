@@ -6,7 +6,6 @@ export const mergeFragments = (fragments: Array<any> = [], current: any) => {
   if (isPrimitive(last)) {
     fragments.push(`${last}${current}`);
   } else {
-    const apply: Array<any> = [];
-    apply.push.apply(fragments, [last, current]);
+    Array.prototype.push.apply(fragments, [last, current]);
   }
 };
